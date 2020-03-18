@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+	{% for embed in all_embed %}
+		{{ embed['html'] | safe }}
+		<br>
+	{% endfor %}
+</body>
+</html>
